@@ -1,7 +1,7 @@
-const Album = require("../models/Album");
-const { v4: uuidv4 } = require("uuid");
-const Image = require("../models/Image");
-const cloudinary = require("cloudinary").v2;
+import Album from "../models/Album"
+import { v4 as uuidv4 } from "uuid"
+import Image from"../models/Image"
+import cloudinary from ("cloudinary").v2;
 
 const createAlbum = async (req, res) => {
   try {

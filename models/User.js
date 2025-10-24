@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
+import mongoose from("mongoose");
 // const { v4: uuidv4 } = require("uuid");
-const { v4: uuidv4 } = await import("uuid");
+import { v4 as uuidv4 } from("uuid");
 
 const userSchema = new mongoose.Schema(
   {

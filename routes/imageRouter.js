@@ -1,16 +1,16 @@
-const express = require("express");
+import express from("express");
 const router = express.Router();
-const authenticateToken = require("../middleware/authMiddleware");
-const { getAlbumById } = require("../controllers/albumController");
-const upload = require("../middleware/uploadMiddleware");
-const {
+import authenticateToken from("../middleware/authMiddleware");
+import { getAlbumById }  from("../controllers/albumController");
+import upload from("../middleware/uploadMiddleware");
+import {
   getAlbumImages,
   uploadImage,
   getFavoriteImages,
   toggleFavorite,
   addComment,
   deleteImage,
-} = require("../controllers/imageController");
+} from("../controllers/imageController");
 
 router.use(authenticateToken);
 

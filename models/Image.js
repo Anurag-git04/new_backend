@@ -1,6 +1,6 @@
-const mongoose = require("mongoose");
+import mongoose from("mongoose");
 // const { v4: uuidv4 } = require("uuid");
-const { v4: uuidv4 } = await import("uuid");
+import { v4 as uuidv4 } from("uuid");
 
 // Comment schema for embedded comments
 const commentSchema = new mongoose.Schema(

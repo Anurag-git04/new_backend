@@ -1,4 +1,4 @@
-const Album = require("../models/Album");
+import Album from ("../models/Album");
 
 const validateAlbumCreation = async (req, res, next) => {
   const { name } = req.body;

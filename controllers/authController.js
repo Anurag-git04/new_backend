@@ -1,7 +1,7 @@
-const { default: axios } = require("axios");
-const { oauth2client } = require("../utils/googleConfig");
-const User = require("../models/User");
-const jwt = require("jsonwebtoken");
+import { axios } from "axios"
+import { oauth2client } from ("../utils/googleConfig");
+import User from("../models/User")
+import jwt from ("jsonwebtoken");
 
 const googleLogin = async (req, res) => {
   try {

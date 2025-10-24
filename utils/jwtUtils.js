@@ -1,4 +1,4 @@
-const jwt = require("jsonwebtoken");
+import jwt from("jsonwebtoken");
 
 const generateToken = (payload) => {
   console.log("GENERATE key: secret =", process.env.JWT_SECRET);

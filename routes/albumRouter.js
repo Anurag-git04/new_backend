@@ -1,6 +1,6 @@
-const express = require("express");
-const authenticateToken = require("../middleware/authMiddleware");
-const {
+import express from("express");
+import authenticateToken from("../middleware/authMiddleware");
+import {
   createAlbum,
   getUserAlbum,
   getAlbumById,
@@ -8,12 +8,12 @@ const {
   getAlbumSharedByUser,
   getAlbumImageStat,
   deleteAlbum,
-} = require("../controllers/albumController");
-const {
+} from("../controllers/albumController");
+import {
   validateAlbumCreation,
   validateAlbumUpdate,
-} = require("../middleware/validationMiddleware");
-const upload = require("../middleware/uploadMiddleware");
+} from("../middleware/validationMiddleware");
+import upload from("../middleware/uploadMiddleware");
 
 const router = express.Router();
 

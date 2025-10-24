@@ -1,6 +1,6 @@
-const express = require("express");
-const { googleLogin } = require("../controllers/authController");
-const User = require("../models/User");
+import express from("express");
+import { googleLogin } from("../controllers/authController");
+import User  from("../models/User");
 const router = express.Router();
 
 router.get("/google", googleLogin);
